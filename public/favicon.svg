@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#0F2547" />
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#D4AF37" stroke-opacity="0.35" stroke-width="2" />
+  <text
+    x="50%"
+    y="54%"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="system-ui, -apple-system, sans-serif"
+    font-weight="800"
+    font-size="28"
+    letter-spacing="-1"
+    fill="#D4AF37"
+  >VD</text>
+</svg>
