@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --surface-alt: #edf1f8;
+  --ink: #0f2547;
+  --muted: #4a5b78;
+  --line: #d8e0ee;
+  --navy: #0f2547;
+  --navy-deep: #091830;
+  --gold: #d4af37;
+  --gold-ink: #0f2547;
+}
+
+:root.dark {
+  --bg: #071120;
+  --surface: #0e1d34;
+  --surface-alt: #132744;
+  --ink: #eef3fa;
+  --muted: #9fb0c9;
+  --line: #1f3557;
+  --navy: #14315e;
+  --navy-deep: #050d1a;
+  --gold: #e5c158;
+  --gold-ink: #071120;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(212, 175, 55, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(212, 175, 55, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
